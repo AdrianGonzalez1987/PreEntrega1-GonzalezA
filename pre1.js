@@ -35,7 +35,7 @@ else
 pregunta =0
 miTurno = 0
 
-    function queHacer (consulta)
+    function queHacer1 (consulta)
 
     {
             switch (consulta) 
@@ -50,7 +50,7 @@ miTurno = 0
             }
     }
 
-    function queHacer (turno)
+    function queHacer2 (turno)
     {
             switch (turno)
             
@@ -73,7 +73,7 @@ miTurno = 0
                 return miTurno;
 
             case "7":
-                miTurno = "cita a las 7:20"
+                miTurno = "cita a las 7:10"
                 return miTurno;
                 
             case "8":
@@ -88,7 +88,7 @@ miTurno = 0
     if (queTegustaria == 1)
     {
         let consulta = prompt("ingresa el que decea realizar \n 1 Para realizar Consultas \n 2 Para Salir")
-        alert (queHacer(consulta))
+        alert (queHacer1(consulta))
 
         alert("\n ----Datos--- \n Nombre:   " + nombre + 
                     "\n Apellido:  " + apellido + 
@@ -99,7 +99,7 @@ miTurno = 0
     if(queTegustaria == 2) 
     {
         let turno = prompt("Decea realizar un turno: \n Los turnos son de 5 a 7 con una duracion por paciente de 40 minuto: \n 3 entre 5:00 - 5:30 \n 4 entre las 5:35 - 6:05 \n 5 entre las 6:10 - 6:40 \n 6 entre las 6:45 - 7:15 \n 7 entre las 7:20 - 7:50 \n 8 Salir de seleccionar turno ")
-        alert (queHacer(turno))
+        alert (queHacer2(turno))
         valor1 ="su turno es a las 5";
 
         alert("\n ----Datos--- \n Nombre:   " + nombre + 
